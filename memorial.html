@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Thach Ma | Memorial</title>
+        <link rel="stylesheet" href="nav_bar.css">
+        <link rel="stylesheet" href="memorial.css">
+        <link rel="stylesheet" href="fonts/css/all.css">
+
+    </head>
+
+    <body>
+        <div class="nav-bar">
+            <img class="daylight" src="images/sun.png" href="Daylight Mode">
+
+            <div class="homepage">
+                <a href="homepage.html">Home</a>
+            </div><!--homepage-->
+    
+            <div class="podcasts">
+                <a href="podcasts.html">Podcasts</a>
+            </div><!--podcasts-->
+            
+            <div class="video_sermons">
+                <a href="video_sermons.html">Video Sermons</a>
+            </div><!--video_sermons-->
+
+            <div class="memorial">
+                <a href="memorial.html">Memorial</a>
+            </div><!--memorial-->
+        </div><!--nav-bar-->
+
+        <div class="picture">
+            <div class="memorial_title">
+                <h1>Memorial</h1>
+                <div class="memorial_menu">
+                    <a href="memorial.html#memorial_slideshow">
+                        <h2>Memorial Slideshow</h2>
+                    </a>
+                    <a href="memorial.html#funeral_service">
+                        <h2>Funeral Service</h2>
+                    </a>
+                    <a href="memorial.html#burial_service">
+                        <h2>Burial Service</h2>
+                    </a>
+                </div><!--memorial_slideshow-->
+            </div><!--memorial_title-->
+        </div><!--picture-->
+
+        <div class="no-picture">
+            <div id="memorial_slideshow">
+                <h2>Memorial Slideshow</h2>
+                <iframe width="1000" height="600"
+                    src="https://www.youtube.com/embed/hEUWVuHixp0">
+                </iframe>
+            </div><!--memorial_slideshow-->
+
+            <div id="funeral_service">
+                <h2>Funeral Service 11.17.2021</h2>
+                <iframe width="1000" height="600" src="https://www.youtube.com/embed/sA0VwwR95ZY"></iframe>
+            </div><!--funeral_service-->
+
+            <div id="burial_service">
+                <h2>Burial Service 11.17.2021</h2>
+                <iframe width="1000" height="600" src="https://www.youtube.com/embed/DBFoU9l2pqY"></iframe>
+            </div><!--burial_service-->
+        </div><!--no-picture-->
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!--loaded the minified file-->
+        <script src="rellax/rellax.min.js"></script>
+        <script src="smoothscroll/jquery.smoothscroll.min.js"></script>
+        <script>      
+            var rellax = new Rellax('.picture', {speed: -8});
+
+            $('html').smoothScroll(); //everything in entire document when be smoothscrolled when clicked in the link
+        </script>
+    </body>
+
+</html>

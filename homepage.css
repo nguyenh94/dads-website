@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "Saira";
+    src:url("fonts/SairaCondensed-Thin.ttf");
+}
+body {
+    background-color: black;
+    font-family: 'Saira', sans-serif;
+}
+
+.whole-container {
+    display: flex;
+    flex-direction: row;
+    background-color: pink;
+    align-items: stretch;
+}
+
+/* .nav-bar {
+    background-color: red;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-bar a {
+    font-size: 1.7em;
+    color: white;
+    text-decoration: none;
+} */
+
+.picture {
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: gray;
+    overflow: hidden;
+}
+
+.picture > img {
+    height: 100%;
+    width: auto;
+}
+
+.no_picture {
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 650px;
+    right: 0px;
+    /* background-color: blue; */
+    color: white;
+}
+
+.scripts {
+    display: flex;
+    position: relative;
+    top: 36%;
+    padding-left: 30px;
+    padding-right: 20px;
+    /* background-color: red; */
+    flex-direction: column;
+}
+
+.scripts h1 {
+    font-size: 6em;
+    font-weight: lighter;
+    margin-bottom: 0px;
+}
+
+.scripts p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: lighter;
+    font-size: 2.8em;
+}
+
+.scripts iframe {
+    padding-top: 10px;
+}
+/* .daylight {
+    position: absolute;
+    width: 50px;
+    height: auto;
+    z-index: 1;s
+} */
+

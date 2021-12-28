@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Thach Ma | Podcasts</title>
+        <link rel="stylesheet" href="nav_bar.css">
+        <link rel="stylesheet" href="podcasts.css">
+        <link rel="stylesheet" href="fonts/css/all.css">
+
+    </head>
+
+    <body>
+        <div class="nav-bar">
+            <img class="daylight" src="images/sun.png" href="Daylight Mode">
+
+            <div class="homepage">
+                <a href="homepage.html">Home</a>
+            </div><!--homepage-->
+    
+            <div class="podcasts">
+                <a href="podcasts.html">Podcasts</a>
+            </div><!--podcasts-->
+            
+            <div class="video_sermons">
+                <a href="video_sermons.html">Video Sermons</a>
+            </div><!--video_sermons-->
+
+            <div class="memorial">
+                <a href="memorial.html">Memorial</a>
+            </div><!--memorial-->
+        </div><!--nav-bar-->
+
+        <div class="whole-container">
+            <div class="picture">
+                <h1>Podcasts</h1>
+                <!--<img src="images/dad_podcasts.jpg" alt="Dad Preaching Podcast">-->
+                <a href="podcasts.html#no-picture-container">
+                    <i class="fa fa-angle-down"></i>
+                </a>
+            </div><!--picture-->
+
+            <div class="no-picture">
+                <div id="no-picture-container">
+                    <div class="anchor">
+                        <a href="https://anchor.fm/huong-nguyen15" target="blank">
+                            <img src="images/anchor.png" alt="Anchor Logo">
+                            <p>Anchor</p>
+                        </a>
+                    </div><!--anchor-->
+
+                    <div class="spotify">
+                        <a href="https://open.spotify.com/show/1y3PQtjtLplp1jCgcUxyyC" target="blank">
+                            <img src="images/spotify.png" alt="Spotify Logo">
+                            <p>Spotify</p>
+                        </a>
+                    </div><!--spotify-->
+
+                    <div class="apple">
+                        <a href="https://podcasts.apple.com/us/podcast/pastor-thach-mas-sermons/id1599856752" target="blank">
+                            <img src="images/apple.png" alt="Apple Podcasts Logo">
+                            <p>Apple Podcasts</p>
+                        </a>
+                    </div><!--apple-->
+
+                    <div class="google">
+                        <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy83OGFmNTA2NC9wb2RjYXN0L3Jzcw" target="blank">
+                            <img src="images/google.png" alt="Google Podcasts Logo">
+                            <p>Google Podcasts</p>
+                        </a>
+                    </div><!--google-->
+                </div><!--no-picture-container-->
+            </div><!--no-picture-->
+        </div><!--whole-container-->
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!--loaded the minified file-->
+        <script src="smoothscroll/jquery.smoothscroll.min.js"></script>
+        <script src="rellax/rellax.min.js"></script>
+        
+        <script>      
+            var rellax = new Rellax('.picture', {speed: -8});
+
+            $('html').smoothScroll(); //everything in entire document when be smoothscrolled when clicked in the link
+        </script>
+    </body>
+</html>

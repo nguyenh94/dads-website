@@ -1,0 +1,28 @@
+.nav-bar {
+    /* background-color: red; */
+    position: absolute;
+    width: 100%;
+    right: 25px;
+    top: 25px;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1;
+}
+
+.nav-bar a {
+    /* background-color: red; */
+    font-size: 1.7em;
+    color: white;
+    text-decoration: none;
+    /* padding-top: 20px; */
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.nav-bar img {
+    margin-right: auto;
+    width: 50px;
+    height: auto;
+    padding-left: 30px;
+    cursor: pointer;
+}

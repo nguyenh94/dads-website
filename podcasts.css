@@ -1,0 +1,130 @@
+@font-face {
+    font-family: "Saira";
+    src:url("fonts/SairaCondensed-Thin.ttf");
+}
+
+body {
+    background-color: black;
+    font-family: 'Saira', sans-serif;
+}
+
+/* .whole-container {
+    display: flex;
+    flex-direction: column;
+} */
+
+.picture {
+    /* background: transparent; */
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("images/dad_podcasts.jpg");
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /* overflow: hidden; */
+}
+
+.picture h1 {
+    position: absolute;
+    top: 30%;
+    right: 38%;
+    color: white;
+    text-align: center;
+    font-size: 10em;
+    /* z-index: 1; */
+}
+
+.picture > a {
+    color: white;
+    font-weight: lighter;
+    font-size: 5em;
+    position: absolute;
+    top: 90%;
+    right: 50%;
+}
+
+.picture > a > i {
+    color: white;
+    z-index: 1;
+}
+
+/* .picture > img {
+    background: rgba(0,0,0,0.5);
+    /* opacity: 0.5; */
+    /* width: 100%;
+    height: auto;
+    position: relative;
+    bottom: 200px;
+}  */
+
+.no-picture {
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+#no-picture-container {
+    /* background-color: DarkGray; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding-top: 0px;
+    /* width: 900px; */
+    /* height: 700px; */
+    display: flex;
+    flex-direction: column;
+    /* text-decoration: none; */
+}
+
+#no-picture-container a {
+    text-decoration: none;
+}
+
+#no-picture-container p {
+    font-size: 7em;
+    padding-left: 50px;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 50px;
+}
+
+#no-picture-container img {
+    width: 180px;
+    height: auto;
+    padding-top: 50px;
+}
+.anchor a {
+    display: flex;
+}
+
+.spotify a{
+    display: flex;
+}
+
+/* .spotify img {
+    width: 300px;
+    height: auto;
+} */
+
+.apple a {
+    display: flex;
+}
+
+.apple img {
+    width: 170px;
+    height: auto;
+}
+
+.google a {
+    display: flex;
+}
+
+.google img {
+    padding-bottom: 50px;
+}
