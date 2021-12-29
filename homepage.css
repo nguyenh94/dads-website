@@ -2,48 +2,68 @@
     font-family: "Saira";
     src:url("fonts/SairaCondensed-Thin.ttf");
 }
-body {
+
+body, html {
+    height: 100%;
+    margin: 0;
     background-color: black;
     font-family: 'Saira', sans-serif;
 }
 
 .whole-container {
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
     display: flex;
     flex-direction: row;
-    background-color: pink;
-    align-items: stretch;
+    /* justify-content: center; */
+    /* align-items: stretch; */
 }
 
 .picture {
     height: 100%;
+    /* width: 30vw;
+    height: 30vh; */
     position: absolute;
-    top: 0px;
-    left: 0px;
-    background-color: gray;
+    /* top: 0px;
+    left: 0px; */
     overflow: hidden;
 }
 
-.picture > img {
-    height: 100%;
+.whole-container > img {
     width: auto;
+    height: 100%;
+    /* position: fixed; */
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    /* height: 100%; */
+    /* width: auto; */
 }
 
-.no_picture {
-    height: 100%;
-    position: absolute;
-    top: 0px;
+/* .whole-container {
+    display: flex;
+    flex-direction: column;
+} */
+
+/*.no_picture {
+    /* height: 100%;
+    position: absolute; */
+    /* top: 0px;
     left: 650px;
-    right: 0px;
-    color: white;
-}
+    right: 0px; */
+    /* color: white; */
 
 .scripts {
+    color: white;
     display: flex;
     position: relative;
-    top: 20%;
-    padding-left: 30px;
+    top: 200px;
+    padding-left: 40px;
     padding-right: 20px;
-    /* background-color: red; */
     flex-direction: column;
 }
 
