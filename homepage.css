@@ -15,7 +15,7 @@ body, html {
     width: 100%;
     top: 0px;
     left: 0px;
-    position: absolute;
+    /* position: absolute; */
     display: flex;
     flex-direction: row;
     /* justify-content: center; */
@@ -24,8 +24,6 @@ body, html {
 
 .picture {
     height: 100%;
-    /* width: 30vw;
-    height: 30vh; */
     position: absolute;
     /* top: 0px;
     left: 0px; */
@@ -60,11 +58,12 @@ body, html {
 .scripts {
     color: white;
     display: flex;
+    margin-bottom: 0px;
     position: relative;
     top: 200px;
+    flex-direction: column;
     padding-left: 40px;
     padding-right: 20px;
-    flex-direction: column;
 }
 
 .scripts h1 {
