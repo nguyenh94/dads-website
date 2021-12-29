@@ -14,18 +14,6 @@ body {
     align-items: stretch;
 }
 
-/* .nav-bar {
-    background-color: red;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.nav-bar a {
-    font-size: 1.7em;
-    color: white;
-    text-decoration: none;
-} */
-
 .picture {
     height: 100%;
     position: absolute;
@@ -46,7 +34,6 @@ body {
     top: 0px;
     left: 650px;
     right: 0px;
-    /* background-color: blue; */
     color: white;
 }
 
@@ -76,10 +63,5 @@ body {
 .scripts iframe {
     padding-top: 10px;
 }
-/* .daylight {
-    position: absolute;
-    width: 50px;
-    height: auto;
-    z-index: 1;s
-} */
+
 

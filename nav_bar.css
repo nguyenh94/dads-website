@@ -1,5 +1,4 @@
 .nav-bar {
-    /* background-color: red; */
     position: absolute;
     width: 100%;
     right: 25px;
@@ -10,11 +9,9 @@
 }
 
 .nav-bar a {
-    /* background-color: red; */
     font-size: 1.7em;
     color: white;
     text-decoration: none;
-    /* padding-top: 20px; */
     padding-left: 12px;
     padding-right: 12px;
 }

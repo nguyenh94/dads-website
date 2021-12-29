@@ -9,7 +9,6 @@ body {
 }
 
 .picture {
-    /* background: transparent; */
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("images/dad_memorial.jpg");
     background-position: top;
     height: 100%;
@@ -20,9 +19,6 @@ body {
 }
 
 .picture h1 {
-    /* position: absolute;
-    top: 30%;
-    right: 40%; */
     color: white;
     text-align: center;
     font-size: 10em;
@@ -42,7 +38,6 @@ body {
 .memorial_title {
     display: flex;
     position: absolute;
-    /* height: 150px; */
     top: 35%;
     right: 30%;
 }
@@ -58,7 +53,6 @@ body {
 
 .memorial_menu h2 {
     margin: 0px;
-    /* padding: 20px; */
     font-weight: lighter;
 }
 
@@ -80,7 +74,6 @@ body {
 
 #memorial_slideshow {
     padding: 50px;
-    /* border-bottom: 2px solid white; */
 }
 
 #memorial_slideshow h2 {
