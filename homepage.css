@@ -56,13 +56,14 @@ body, html {
     /* color: white; */
 
 .scripts {
+    width: 150%;
     color: white;
     display: flex;
     margin-bottom: 0px;
     position: relative;
-    top: 200px;
+    top: 23%;
     flex-direction: column;
-    padding-left: 40px;
+    padding-left: 60px;
     padding-right: 20px;
 }
 
