@@ -10,7 +10,9 @@ body {
 
 .picture {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("images/dad_memorial.jpg");
+    background-size: cover;
     background-position: top;
+    background-repeat: no-repeat;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -27,7 +29,7 @@ body {
     padding-right: 30px;
     border-right: 5px solid white;
     height: 300px;
-    line-height: 300px;
+    line-height: 280px;
 }
 
 .picture a {
@@ -37,9 +39,15 @@ body {
 
 .memorial_title {
     display: flex;
-    position: absolute;
+    /* position: absolute;
     top: 35%;
-    right: 30%;
+    right: 30%; */
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
 }
 
 .memorial_menu {
@@ -48,7 +56,11 @@ body {
     margin: 0px;
     padding: 0px;
     padding-left: 30px;
-    padding-top: 70px;
+    /* padding-top: 70px; */
+}
+
+.mobile_menu {
+    display: none;
 }
 
 .memorial_menu h2 {
@@ -104,4 +116,34 @@ body {
 
 iframe {
     border: none;
+}
+
+/* Small devices (landscape phones, 576px and under) */
+@media (max-width: 576px) {
+    .picture {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+    p {
+        font-size: 2em;
+    }
+    button {
+        background-color: black;
+    }
+    .memorial_menu {
+        display: none;
+    }
+    .mobile_menu {
+        display: block;
+        font-size: 1.3em;
+        text-align: center;
+    }
+    .memorial_title h1 {
+        display: none;
+    }
+    .no-picture {
+        display: none;
+    }
 }

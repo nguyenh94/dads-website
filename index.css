@@ -35,8 +35,7 @@ body, html {
     left: 0px;
     right: 0px;
     bottom: 0px;
-    /* height: 100%; */
-    /* width: auto; */
+    object-fit: cover;
 }
 
 #scripts {
@@ -45,7 +44,7 @@ body, html {
     display: flex;
     margin-bottom: 0px;
     position: relative;
-    top: 23%;
+    top: 33%;
     flex-direction: column;
     padding-left: 30px;
     padding-right: 20px;
@@ -68,18 +67,52 @@ body, html {
     padding-top: 10px;
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-}
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-}
-/* Large devices (desktops, 992px and up) */
+/* Small devices (landscape phones, 576px and under) */
 @media (max-width: 992px) {
     #picture {
         display: none;
     }
+    body {
+        background-image: url("images/homepg_dark.png");
+        /* background-attachment: fixed; */
+        /* background-position: 30% 35%; */
+        /* opacity: 50%; */
+        background-size: cover;
+        background-position: center;
+    }
+    #scripts {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 45%;
+    }
+    #scripts h1 {
+        font-size: 3em;
+    }
+    button {
+        background-color: black;
+    }
 }
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* small devices (desktops, 992px and under) */
+@media (max-width: 992px) {
+
+}
+
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1400px) {
+    #scripts {
+        top: 33%;
+    }
+    #scripts h1 {
+        font-size: 5.5em;
+    }
 }

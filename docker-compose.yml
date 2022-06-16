@@ -2,14 +2,8 @@ version: '3.7'
 
 services:
   thachma:
-    image: nginx:1.17.9-alpine
+    build: .
     ports:
       - 8001:80
     volumes:
       - ./:/usr/share/nginx/html
-    networks:
-      - web
-
-networks:
-  web:
-    external: true

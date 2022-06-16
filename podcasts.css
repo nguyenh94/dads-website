@@ -8,14 +8,16 @@ body {
     font-family: 'Saira', sans-serif;
 }
 
-.whole-container {
-    display: flex;
-    flex-direction: row;
+.navbar {
+    z-index: 1;
 }
 
 .picture {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("images/dad_podcasts.jpg");
+    background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
     height: 100%;
     width: 100%;
     position: absolute;
@@ -24,86 +26,80 @@ body {
 }
 
 .picture h1 {
-    position: absolute;
-    top: 30%;
-    right: 38%;
+    padding: 0px;
+    margin: 0px;
+    padding-right: 30px;
+    border-right: 5px solid white;
     color: white;
     text-align: center;
     font-size: 10em;
+    height: 300px;
+    line-height: 280px;
 }
 
-.picture > a {
+.picture a {
     color: white;
-    font-weight: lighter;
-    font-size: 5em;
-    position: absolute;
-    top: 90%;
-    right: 50%;
-}
-
-.picture > a > i {
-    color: white;
-    z-index: 1;
-}
-
-.no-picture {
-    background-color: black;
-    position: absolute;
-    width: 100%;
-    top: 100%;
-    left: 0px;
-    display: flex;
-    flex-direction: column;
-}
-
-#no-picture-container {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    padding-top: 0px;
-    display: flex;
-    flex-direction: column;
-}
-
-#no-picture-container a {
     text-decoration: none;
 }
 
-#no-picture-container p {
-    font-size: 7em;
-    padding-left: 50px;
+.podcasts_title {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.podcasts_menu {
     color: white;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-top: 50px;
+    font-size: 1.5em;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 30px;
+    /* padding-top: 70px; */
 }
 
-#no-picture-container img {
-    width: 180px;
-    height: auto;
-    padding-top: 50px;
-}
-.anchor a {
-    display: flex;
+.podcasts_menu h2 {
+    margin: 0px;
+    font-weight: lighter;
 }
 
-.spotify a{
-    display: flex;
+/* Small devices (landscape phones, 576px and under) */
+@media (max-width: 576px) {
+    .picture {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: bottom;
+    }
+    p {
+        font-size: 2em;
+    }
+    button {
+        background-color: black;
+    }
+    .podcasts_title h1 {
+        display: none;
+    }
+    .podcasts_title h2 {
+        font-size: 1.3em;
+        text-align: center;
+    }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
 }
 
-.apple a {
-    display: flex;
+/* small devices (desktops, 992px and under) */
+@media (max-width: 992px) {
+
 }
 
-.apple img {
-    width: 170px;
-    height: auto;
-}
-
-.google a {
-    display: flex;
-}
-
-.google img {
-    padding-bottom: 50px;
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 576px) and (max-width: 1400px) {
+  
 }

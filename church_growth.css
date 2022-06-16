@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "Saira";
+    src:url("fonts/SairaCondensed-Thin.ttf");
+}
+
+body {
+    background-color: black;
+    font-family: 'Saira', sans-serif;
+}
+
+#picture {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("images/dad_churchgrowth.jpg");
+    background-position: 50% 38%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#picture h1 {
+    position: absolute;
+    top: 30%;
+    right: 30%;
+    color: white;
+    text-align: center;
+    font-size: 10em;
+}
+
+#picture > a {
+    color: white;
+    /* font-weight: lighter; */
+    font-size: 5em;
+    position: absolute;
+    top: 90%;
+    right: 50%;
+}
+
+#picture-container a {
+    color: white;
+    font-size: 5em;
+    position: absolute;
+    top: 90%;
+    right: 50%;
+}
+
+#no-picture {
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#no-picture h2 {
+    color: white;
+    font-size: 2.5em;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+#no-picture-container {
+    padding: 20px;
+}
+
+iframe {
+    border: none;
+}
